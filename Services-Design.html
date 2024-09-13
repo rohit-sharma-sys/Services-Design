@@ -1,0 +1,169 @@
+<style>
+    .animation:after {
+    content: "";
+    width: 0%;
+    height: 100%;
+    right: 0px;
+    left: 0px !important;
+    bottom: 0px;
+    background-image: linear-gradient(70deg, #18509E 0%, #7694bd 100%) !important;
+    transition: all 0.6s ease;
+    position: absolute;
+        z-index: -9;
+
+}
+.animation:hover:after {
+    width: 100%;
+    z-index: -9;
+}
+.animation:hover .list-unstyled li{
+    color:#fff;
+}
+    .service_row {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+.service_row .col-12 {
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+}
+.service_row .card {
+    position: relative;
+}
+.ribbon1 {
+    position: absolute;
+    top: -6.1px;
+    width: 100%;
+}
+span.ribbon1 span {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 20px 0px;
+    font-family: Montserrat;
+}
+.ribbon1:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 10px solid #18509E;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 58px;
+}
+.service_row .px-3 {
+    padding: 85px 20px 20px 36px;
+}
+.card-body.px-3 ul {
+    list-style: disc;
+    padding: 0px;
+}
+.text-success {
+    color: #3c763d;
+}
+.service_row ul.list-unstyled.text-success li {
+    text-transform: capitalize;
+}
+ul.list-unstyled.text-success li {
+    line-height: 1.7em;
+    color: #000;
+    font-size: 15px;
+    list-style-position: outside;
+}
+.ribbon1 span {
+   position: relative;
+    display: block;
+    text-align: center;
+    background: #18509E;
+    line-height: 1;
+    border-top-right-radius: 8px;
+}
+@media(min-width:768px) And (max-width:1104px){
+    .service_row {
+    grid-template-columns: 2fr 2fr;
+    gap: 20px;
+}
+}
+@media(max-width:768px){
+.service_row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+</style>
+<div class="containers">
+    <div class="service_row">
+      <div class="col-12 animation">
+        <div class="card">
+            <span class="ribbon1"><span>Career Consultation</span></span>
+          <div class="card-body px-3">
+            <ul class="list-unstyled text-success">
+              <li>Comprehensive evaluation of previous experience</li>
+              <li>Personalized career path identification</li>
+              <li>Strategic planning for the next career move</li>
+              <li>In-depth analysis of strengths and weaknesses</li>
+              <li>Customized job search strategy development</li>              
+              <li>Expert networking advice and connection facilitation</li>
+              <li>Creation of a detailed action plan</li>
+              <li>Execution and continuous monitoring of progress</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+       <div class="col-12 animation">
+        <div class="card">
+            <span class="ribbon1"><span>Rebranding</span></span>
+          <div class="card-body px-3">
+            <ul class="list-unstyled text-success">
+                <li>Professionally crafted resume from scratch</li>
+                <li>ATS, Recruiter, and Hiring Manager Approved Resume.</li>
+                <li>In-depth job market research</li>
+                <li>Professional branding strategy guide</li>
+                <li>Compelling brand message and story development</li>
+                <li>Strategic keyword optimization</li>
+                <li>LinkedIn profile enhancement</li>
+                <li>Professional LinkedIn photo</li>
+                <li>Custom cover letter creation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+       <div class="col-12 animation">
+        <div class="card">
+            <span class="ribbon1"><span>Job Application Assistance</span></span>
+          <div class="card-body px-3">
+            <ul class="list-unstyled text-success">
+              <li>Identification of suitable job titles and companies</li>
+              <li>Development of targeted marketing campaigns for recruiters</li>
+              <li>Creation and management of live job searches</li>
+              <li>Active job application submission</li>
+              <li>Tracking and monitoring of application statuses</li>
+              <li>Submission of referrals to staffing agencies and recruiters</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+       <div class="col-12 animation">
+        <div class="card">
+            <span class="ribbon1"><span>Interview Preparation</span></span>
+          <div class="card-body px-3">
+            <ul class="list-unstyled text-success">
+                <li>Identification of roles for mock interviews</li>
+                <li>Conducting recorded video mock interview sessions</li>
+                <li>Analysis and coaching on behavior patterns</li>
+                <li>Voice tone and pace analysis and coaching</li>
+                <li>Providing ideal answers for each interview session</li>
+                <li>Sharing an interview guide along with live coaching sessions</li>
+             </ul>
+          </div>
+        </div>
+      </div>
+     </div>
+  </div>
